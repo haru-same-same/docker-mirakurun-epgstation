@@ -49,7 +49,7 @@ services:
             - ./epgstation/data:/app/data
             - ./epgstation/thumbnail:/app/thumbnail
             - ./epgstation/logs:/app/logs
-            - ./recorded:/app/recorded
+            - /mnt/hdd1/tv-recorded:/app/recorded
         environment:
             TZ: "Asia/Tokyo"
         depends_on:
